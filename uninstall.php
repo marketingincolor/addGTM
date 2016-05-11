@@ -15,7 +15,3 @@ delete_option( $option_name );
 
 // For site options in Multisite
 delete_site_option( $option_name );
-
-// Delete from db
-global $wpdb;
-$wpdb->query( "DELETE FROM wp_options WHERE option_name= $option_name;" );
